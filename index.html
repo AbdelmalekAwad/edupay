@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPay - التعليم أينما كنت</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="EduPay Logo" class="logo-img">
+        </div>
+        <div class="nav-links">
+            <a href="#home"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="#content"><i class="fas fa-book-open"></i> المحتوى</a>
+            <a href="#ai"><i class="fas fa-brain"></i> الذكاء الاصطناعي</a>
+            <a href="#about"><i class="fas fa-info-circle"></i> عن المنصة</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="btn login"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</button>
+            <button class="btn register"><i class="fas fa-user-plus"></i> إنشاء حساب</button>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1><i class="fas fa-graduation-cap hero-icon"></i>بذكاء... نوصل التعليم حيث لا يصل أحد</h1>
+            <p>منصة تعليمية متكاملة تمكنك من الوصول للمحتوى التعليمي في أي وقت وأي مكان</p>
+            <div class="cta-buttons">
+                <button class="btn primary"><i class="fas fa-rocket"></i> ابدأ الآن</button>
+                <button class="btn secondary"><i class="fas fa-search"></i> استكشف المحتوى</button>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <i class="fas fa-laptop-code hero-icon"></i>
+            <i class="fas fa-book hero-icon"></i>
+            <i class="fas fa-lightbulb hero-icon"></i>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section id="features" class="features">
+        <h2><i class="fas fa-star"></i> كيف يعمل النظام؟</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-download feature-icon"></i>
+                <h3>تحميل المحتوى</h3>
+                <p>قم بتحميل المحتوى التعليمي للاستخدام بدون إنترنت</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-qrcode feature-icon"></i>
+                <h3>مسح QR</h3>
+                <p>استخدم رمز QR للوصول السريع للمحتوى</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-robot feature-icon"></i>
+                <h3>تعلم ذكي</h3>
+                <p>استفد من الذكاء الاصطناعي في تخصيص تجربتك التعليمية</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المحتوى -->
+    <section id="content" class="content-section">
+        <div class="content-header">
+            <h2 class="content-title">المحتوى التعليمي</h2>
+        </div>
+        
+        <div class="filters-wrapper">
+            <div class="filters">
+                <div class="filter-group">
+                    <label class="filter-label" for="level">المستوى</label>
+                    <select id="level" class="filter-select" title="اختر المستوى">
+                        <option value="">اختر المستوى</option>
+                        <option value="primary">ابتدائي</option>
+                        <option value="secondary">متوسط</option>
+                        <option value="high">ثانوي</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label" for="category">الفئة</label>
+                    <select id="category" class="filter-select" title="اختر الفئة">
+                        <option value="">اختر الفئة</option>
+                        <option value="math">رياضيات</option>
+                        <option value="science">علوم</option>
+                        <option value="arabic">لغة عربية</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <!-- بطاقة اللغة العربية -->
+            <div class="content-card" data-subject="arabic">
+                <div class="subject-icon">📚</div>
+                <h3>اللغة العربية</h3>
+                <p class="subject-level">لغة عربية متوسط</p>
+                <div class="content-actions">
+                    <button class="btn-view"><i class="fas fa-eye"></i> عرض المحتوى</button>
+                    <button class="btn-download"><i class="fas fa-download"></i> تحميل</button>
+                </div>
+            </div>
+
+            <!-- بطاقة العلوم -->
+            <div class="content-card" data-subject="science">
+                <div class="subject-icon">🔬</div>
+                <h3>علوم الصف الثاني</h3>
+                <p class="subject-level">علوم ابتدائي</p>
+                <div class="content-actions">
+                    <button class="btn-view"><i class="fas fa-eye"></i> عرض المحتوى</button>
+                    <button class="btn-download"><i class="fas fa-download"></i> تحميل</button>
+                </div>
+            </div>
+
+            <!-- بطاقة الرياضيات -->
+            <div class="content-card" data-subject="math">
+                <div class="subject-icon">📐</div>
+                <h3>الرياضيات للصف الأول</h3>
+                <p class="subject-level">رياضيات ابتدائي</p>
+                <div class="content-actions">
+                    <button class="btn-view"><i class="fas fa-eye"></i> عرض المحتوى</button>
+                    <button class="btn-download"><i class="fas fa-download"></i> تحميل</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الذكاء الاصطناعي -->
+    <section id="ai" class="ai-section">
+        <h2><i class="fas fa-brain"></i> التعلم الذكي</h2>
+        <div class="ai-container">
+            <div class="ai-form">
+                <h3><i class="fas fa-user-graduate"></i> أخبرنا عن مستواك التعليمي</h3>
+                <form id="aiForm">
+                    <select id="educationLevel" title="اختر مستواك التعليمي">
+                        <option value="">اختر مستواك</option>
+                        <option value="beginner">مبتدئ</option>
+                        <option value="intermediate">متوسط</option>
+                        <option value="advanced">متقدم</option>
+                    </select>
+                    <button type="submit" class="btn primary"><i class="fas fa-magic"></i> اقتراح محتوى مناسب لي</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-graduation-cap"></i> EduPay</h3>
+                <p>التعليم أينما كنت، بدون إنترنت</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-link"></i> روابط سريعة</h3>
+                <a href="#home"><i class="fas fa-chevron-left"></i> الرئيسية</a>
+                <a href="#content"><i class="fas fa-chevron-left"></i> المحتوى</a>
+                <a href="#ai"><i class="fas fa-chevron-left"></i> الذكاء الاصطناعي</a>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-envelope"></i> تواصل معنا</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button class="scroll-top" aria-label="العودة إلى الأعلى">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 
